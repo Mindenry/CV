@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Contact page for Peerawit Lakhampa's portfolio.">
+        <title>Contact | Peerawit Lakhampa</title>
+        <link rel="stylesheet" href="css/style.contact.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <div class="contact-content">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <h2>Address</h2>
+                            <p>10/1 Mitt Maitree, Away Nong Chok Village, 39/543
+                                Soi Away 3, North Bang Chan, Nong Chok District,
+                                Bangkok, 10530, Thailand</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa fa-phone-alt"></i>
+                            <h2>Phone</h2>
+                            <p><a href="tel:+66948966425">+669 4896 6425</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa fa-envelope"></i>
+                            <h2>Email</h2>
+                            <p><a
+                                    href="mailto:mindenrymmd@gmail.com">mindenrymmd@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2>Send Me a Message</h2>
+                        <form action="send-message.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Peerawit Lakhampa. All rights reserved.</p>
+        </footer>
+
+        <!-- Font Awesome CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    </body>
+</html>

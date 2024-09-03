@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FoodExpress - Delicious Food Delivered</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png"
+                        alt="FoodExpress Logo">
+                    FoodExpress
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#restaurants">Restaurants</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-gradient">
+                <div class="hero-content">
+                    <h1>Delicious Food Delivered to Your Doorstep</h1>
+                    <p>Discover the best restaurants in your area and enjoy
+                        mouth-watering meals at home.</p>
+                    <div class="search-bar">
+                        <input type="text" id="addressInput"
+                            placeholder="Enter your address">
+                        <button id="findFoodBtn">Find Food</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured-restaurants">
+                <h2>Featured Restaurants</h2>
+                <div class="restaurant-grid">
+                    <div class="restaurant-card">
+                        <div class="card-image">
+                            <img
+                                src="https://source.unsplash.com/400x300/?burger"
+                                alt="Tasty Burgers">
+                            <span class="rating"><i class="fas fa-star"></i>
+                                4.5</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tasty Burgers</h3>
+                            <p>Juicy burgers with a variety of toppings</p>
+                            <button class="order-btn"
+                                data-restaurant="Tasty Burgers">Order
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="card-image">
+                            <img
+                                src="https://source.unsplash.com/400x300/?pizza"
+                                alt="Pizza Paradise">
+                            <span class="rating"><i class="fas fa-star"></i>
+                                4.7</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pizza Paradise</h3>
+                            <p>Authentic Italian pizzas with crispy crust</p>
+                            <button class="order-btn"
+                                data-restaurant="Pizza Paradise">Order
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="card-image">
+                            <img
+                                src="https://source.unsplash.com/400x300/?sushi"
+                                alt="Sushi Sensation">
+                            <span class="rating"><i class="fas fa-star"></i>
+                                4.8</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Sushi Sensation</h3>
+                            <p>Fresh and delicious sushi rolls</p>
+                            <button class="order-btn"
+                                data-restaurant="Sushi Sensation">Order
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="card-image">
+                            <img
+                                src="https://source.unsplash.com/400x300/?pasta"
+                                alt="Pasta Palace">
+                            <span class="rating"><i class="fas fa-star"></i>
+                                4.6</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pasta Palace</h3>
+                            <p>Homemade pasta with rich sauces</p>
+                            <button class="order-btn"
+                                data-restaurant="Pasta Palace">Order
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon"><i
+                                class="fas fa-utensils"></i></div>
+                        <h3>Choose Your Food</h3>
+                        <p>Browse our wide selection of restaurants and
+                            cuisines.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i
+                                class="fas fa-map-marker-alt"></i></div>
+                        <h3>Set Your Location</h3>
+                        <p>Enter your address for accurate delivery options.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i
+                                class="fas fa-truck"></i></div>
+                        <h3>Get It Delivered</h3>
+                        <p>Enjoy your meal delivered right to your doorstep.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"The food was amazing and arrived hot. Will definitely order again!"</p>
+                        <div class="testimonial-author">- Sarah M.</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Great variety of restaurants to choose from. Easy to use app!"</p>
+                        <div class="testimonial-author">- John D.</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Prompt delivery and excellent customer service. Highly recommended!"</p>
+                        <div class="testimonial-author">- Emily R.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>FoodExpress is your go-to platform for quick and
+                        delicious food delivery. We connect you with the best
+                        local restaurants in your area.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email:
+                        info@foodexpress.com</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Food
+                        St, Tasty City, FC 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FoodExpress. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <div id="cart-total"></div>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

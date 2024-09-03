@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LuxeShop - สินค้า</title>
+        <link rel="stylesheet" href="style/style.products.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="index.html" class="logo">LuxeShop</a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">หน้าหลัก</a></li>
+                        <li><a href="products.html">สินค้า</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="contact.html">ติดต่อ</a></li>
+                    </ul>
+                    <div class="user-actions">
+                        <a href="#" id="search-icon" class="icon-button"><i
+                                class="fas fa-search"></i></a>
+                        <a href="account.html" class="icon-button"><i
+                                class="fas fa-user"></i></a>
+                        <a href="cart.html" class="icon-button cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="search-overlay" class="overlay">
+            <div class="overlay-content">
+                <form id="search-form">
+                    <input type="text" placeholder="ค้นหาสินค้า..."
+                        name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <main>
+            <section class="products-hero">
+                <div class="container">
+                    <h1>สินค้าทั้งหมด</h1>
+                </div>
+            </section>
+
+            <section class="product-listing">
+                <div class="container">
+                    <div class="filters">
+                        <select id="category-filter">
+                            <option value>ทุกหมวดหมู่</option>
+                            <option value="clothing">เสื้อผ้า</option>
+                            <option value="shoes">รองเท้า</option>
+                            <option value="bags">กระเป๋า</option>
+                            <option value="accessories">เครื่องประดับ</option>
+                        </select>
+                        <select id="sort-filter">
+                            <option value="price-asc">ราคา: ต่ำไปสูง</option>
+                            <option value="price-desc">ราคา: สูงไปต่ำ</option>
+                            <option value="name-asc">ชื่อ: A-Z</option>
+                            <option value="name-desc">ชื่อ: Z-A</option>
+                        </select>
+                    </div>
+                    <div id="products-grid" class="product-grid">
+                        <!-- สินค้าจะถูกเพิ่มด้วย JavaScript -->
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-page">หน้าก่อนหน้า</button>
+                        <span id="current-page">หน้า 1</span>
+                        <button id="next-page">หน้าถัดไป</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>เกี่ยวกับ LuxeShop</h3>
+                        <p>เราคือร้านค้าออนไลน์ที่มุ่งมั่นนำเสนอสินค้าหรูหราคุณภาพสูงในราคาที่เหมาะสม</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>ลิงก์ด่วน</h3>
+                        <ul>
+                            <li><a href="index.html">หน้าหลัก</a></li>
+                            <li><a href="products.html">สินค้า</a></li>
+                            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                            <li><a href="contact.html">ติดต่อ</a></li>
+                            <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>ติดต่อเรา</h3>
+                        <p>อีเมล: info@luxeshop.com</p>
+                        <p>โทร: 02-123-4567</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 LuxeShop. สงวนลิขสิทธิ์</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
